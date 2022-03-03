@@ -33,15 +33,15 @@ cooldown = cooldown - 1;
 // check if player is moving
 if (x > xprevious or x < xprevious or y > yprevious or y < yprevious) {
    plr_moving = 1;
-   show_debug_message("Moving")
+   //show_debug_message("Moving")
 }
 else if (x = xprevious and y = yprevious){
    plr_moving = 0;
-   show_debug_message("Not Moving")
+   // show_debug_message("Not Moving")
 }
 
 // [debug] check if player is "breathing" or sprinting
-if (breathe == 1) {
+/* if (breathe == 1) {
    show_debug_message("Breathing")
 }
 else if (breathe == 0) {
@@ -53,7 +53,7 @@ if (sprint == 1) {
 }
 else if (sprint == 0) {
    show_debug_message("Not Sprinting")
-}
+} */
 
 /*
 	Resources used:
