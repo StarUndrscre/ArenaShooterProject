@@ -55,6 +55,10 @@ else if (sprint == 0) {
    show_debug_message("Not Sprinting")
 } */
 
+// [debug] Restart keybind
+if (keyboard_check(ord("R"))) restart_timer = restart_timer + 0.1;
+if (restart_timer >= 2) game_restart();
+
 /*
 	Resources used:
 		Check if something is moving:
