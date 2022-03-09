@@ -1,2 +1,4 @@
 hp = 5;
 spd = 1.5;
+r = 1000;
+start_moving = 1;
