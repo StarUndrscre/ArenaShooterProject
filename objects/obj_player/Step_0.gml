@@ -33,31 +33,20 @@ cooldown = cooldown - 1;
 // check if player is moving
 if (x > xprevious or x < xprevious or y > yprevious or y < yprevious) {
    plr_moving = 1;
-   //show_debug_message("Moving")
 }
 else if (x = xprevious and y = yprevious){
    plr_moving = 0;
-   // show_debug_message("Not Moving")
 }
-
-// [debug] check if player is "breathing" or sprinting
-/* if (breathe == 1) {
-   show_debug_message("Breathing")
-}
-else if (breathe == 0) {
-   show_debug_message("Not Breathing")
-}
-
-if (sprint == 1) {
-   show_debug_message("Sprinting")
-}
-else if (sprint == 0) {
-   show_debug_message("Not Sprinting")
-} */
 
 // [debug] Restart keybind
 if (keyboard_check(ord("R"))) restart_timer = restart_timer + 0.1;
 if (restart_timer >= 2) game_restart();
+
+// [debug] Spawn enemy on cursor when F is pressed
+if (keyboard_check_pressed(ord("F")))
+{
+	instance_create_layer(mouse_x,mouse_y,"EnemyLayer",obj_enemy)
+}
 
 /*
 	Resources used:
