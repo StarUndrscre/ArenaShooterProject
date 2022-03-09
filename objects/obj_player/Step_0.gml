@@ -48,6 +48,16 @@ if (keyboard_check_pressed(ord("F")))
 	instance_create_layer(mouse_x,mouse_y,"EnemyLayer",obj_enemy)
 }
 
+// [debug] Swap playtest rooms
+if (room == Room1 and keyboard_check_pressed(vk_space))
+{
+	room_goto(PlaytestRoom)
+	show_debug_message("Teleported to Playtest Room!")
+} else if (room == PlaytestRoom and keyboard_check_pressed(vk_space)) {
+	room_goto(Room1)
+	show_debug_message("Teleported to Enemy Room!")
+}
+
 /*
 	Resources used:
 		Check if something is moving:
