@@ -65,4 +65,8 @@ if (room == Room1 and keyboard_check_pressed(vk_space))
 		
 		Printing Values to Screen:
 			https://steamcommunity.com/app/214850/discussions/0/1728701877467347782/
+			
+		Rooms
+			https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Asset_Management/Rooms/Rooms.htm
+			
 */
