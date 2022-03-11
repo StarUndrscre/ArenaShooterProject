@@ -1,5 +1,5 @@
 // check if we are in distance of player
-if (point_distance(x, y, obj_player.x, obj_player.y) < r) // r is the area radius
+if (point_distance(x, y, obj_player.x, obj_player.y) < r and ai_enabled == 1) // r is the area radius
 {
 	start_moving = 1;
 } else
@@ -9,7 +9,9 @@ if (point_distance(x, y, obj_player.x, obj_player.y) < r) // r is the area radiu
 
 if (instance_exists(obj_player) and start_moving == 1)
 {
-	move_towards_point(obj_player.x, obj_player.y, spd);
+	move_towards_point(obj_player.x, obj_player.y, spd)
+} else if (start_moving == 0) {
+	move_towards_point(x, y, 0)
 }
 
 if (hp <= 0) {
