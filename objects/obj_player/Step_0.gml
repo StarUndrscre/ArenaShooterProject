@@ -28,6 +28,15 @@ if (mouse_check_button(mb_left)) && (cooldown < 1)
 	cooldown = 10;
 }
 
+if (mouse_check_button_pressed(mb_right)) && (cooldown < 1)
+{	
+	for (var i = 0; i < 5; i += 1)
+	{
+		instance_create_layer(x,y,"BulletsLayer",obj_bullet2)
+	}
+	cooldown = 30;
+}
+
 cooldown = cooldown - 1;
 
 // check if player is moving
@@ -81,4 +90,6 @@ if (room == Room1 and keyboard_check_pressed(vk_space))
 		Rooms
 			https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Asset_Management/Rooms/Rooms.htm
 			
+		for Loops
+			https://manual.yoyogames.com/GameMaker_Language/GML_Overview/Language_Features/for.htm			
 */

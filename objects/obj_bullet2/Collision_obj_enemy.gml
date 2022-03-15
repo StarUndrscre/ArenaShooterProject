@@ -1,6 +1,6 @@
 with(other)
 {	
-	var dmg = random(2); // generate random number between 0 and 2
+	var dmg = random(1); // generate random number between 0 and 1
 	hp = hp - dmg;
 	if (hp < 0) {
 		hp = 0;
