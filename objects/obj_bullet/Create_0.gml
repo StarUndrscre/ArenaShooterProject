@@ -3,6 +3,7 @@ direction = point_direction(x,y,mouse_x,mouse_y);
 //direction = direction + random_range(-4,4);
 speed = 16;
 image_angle = direction;
+delete_timer = 60;
 
 // randomize bullet position more if player is moving/sprinting
 
@@ -16,6 +17,8 @@ if (sprint == 0 and plr_moving == 1) direction = direction + random_range(-8,8);
 if (breathe == 0 and breathe == 0 and plr_moving == 0) direction = direction + random_range(-4,4);
 if (breathe == 1 and plr_moving == 1) direction = direction + random_range(-2,2);
 if (breathe == 1 and plr_moving == 0) direction = direction;
+
+// delete self when existing for 5 seconds
 
 /*
 	Resources used:

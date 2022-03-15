@@ -30,7 +30,7 @@ if (mouse_check_button(mb_left)) && (cooldown < 1)
 
 if (mouse_check_button_pressed(mb_right)) && (cooldown < 1)
 {	
-	for (var i = 0; i < 5; i += 1)
+	for (var i = 0; i < 6; i += 1)
 	{
 		instance_create_layer(x,y,"BulletsLayer",obj_bullet2)
 	}

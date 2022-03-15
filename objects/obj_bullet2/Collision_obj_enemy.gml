@@ -1,13 +1,14 @@
 with(other)
 {	
-	var dmg = random(1); // generate random number between 0 and 1
+	var dmg = random(2); // generate random number between 0 and 2
+	if (dmg < 1) {
+		dmg += 1;
+	}
 	hp = hp - dmg;
 	if (hp < 0) {
 		hp = 0;
 	}
 }
-
-instance_destroy();
 
 /*
 	Resources used:
