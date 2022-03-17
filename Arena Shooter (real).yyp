@@ -7,6 +7,7 @@
     {"id":{"name":"fnt_score","path":"fonts/fnt_score/fnt_score.yy",},"order":0,},
     {"id":{"name":"snd_death","path":"sounds/snd_death/snd_death.yy",},"order":0,},
     {"id":{"name":"obj_bullet2","path":"objects/obj_bullet2/obj_bullet2.yy",},"order":4,},
+    {"id":{"name":"shd_flash","path":"shaders/shd_flash/shd_flash.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":1,},
     {"id":{"name":"obj_score","path":"objects/obj_score/obj_score.yy",},"order":3,},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":3,},

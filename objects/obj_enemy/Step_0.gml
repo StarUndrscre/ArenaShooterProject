@@ -15,8 +15,14 @@ if (instance_exists(obj_player) and start_moving == 1)
 }
 
 if (hp <= 0) {
-	with(obj_score) plr_score = plr_score + 5;
+	ai_enabled = 0;
+	audio_play_sound(snd_death,0,0);
+	image_alpha -= 0.09; // fade out
+}
+
+if (image_alpha <= 0) {
 	instance_destroy();
+	with(obj_score) plr_score = plr_score + 5;
 }
 
 image_angle = direction;
@@ -26,5 +32,8 @@ image_angle = direction;
 	Resources used:
 		How to tell if an object is within a distance of another?
 			https://stackoverflow.com/questions/37373132/how-to-tell-if-an-object-is-within-a-distance-of-another
+
+		Making the enemy flash when hit
+			https://www.youtube.com/watch?v=g7uhXXUgeAM
 
 */
