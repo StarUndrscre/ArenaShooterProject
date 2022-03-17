@@ -34,7 +34,7 @@ if (mouse_check_button_pressed(mb_right)) && (cooldown < 1)
 		return false
 	} else {
 		shotgun_use += 1;
-		shotgun_cooldown = 60;
+		shotgun_cooldown = 75;
 		for (var i = 0; i < 6; i += 1)
 			{
 				instance_create_layer(x,y,"BulletsLayer",obj_bullet2)
