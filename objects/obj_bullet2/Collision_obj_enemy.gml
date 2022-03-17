@@ -10,6 +10,8 @@ with(other)
 	}
 }
 
+instance_destroy();
+
 /*
 	Resources used:
 		random(); function

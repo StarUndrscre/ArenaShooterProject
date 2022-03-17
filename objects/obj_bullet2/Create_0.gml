@@ -7,4 +7,7 @@ speed = 8;
 image_angle = direction;
 
 // Timer
-delete_timer = 60;
+delete_timer = random(50);
+if (delete_timer < 40) {
+	delete_timer = 40;
+}
