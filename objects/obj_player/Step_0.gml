@@ -30,14 +30,22 @@ if (mouse_check_button(mb_left)) && (cooldown < 1)
 
 if (mouse_check_button_pressed(mb_right)) && (cooldown < 1)
 {	
-	for (var i = 0; i < 6; i += 1)
-	{
-		instance_create_layer(x,y,"BulletsLayer",obj_bullet2)
-	}
+	if (shotgun_use > 3 and shotgun_cooldown > 0) {
+		return false
+	} else {
+		shotgun_use += 1;
+		shotgun_cooldown = 60;
+		for (var i = 0; i < 6; i += 1)
+			{
+				instance_create_layer(x,y,"BulletsLayer",obj_bullet2)
+			}
+		}
 	cooldown = 30;
 }
 
-cooldown = cooldown - 1;
+cooldown -= 1;
+shotgun_cooldown -= 1;
+if (shotgun_cooldown < 0) shotgun_use = 0;
 
 // check if player is moving
 if (x > xprevious or x < xprevious or y > yprevious or y < yprevious) {
