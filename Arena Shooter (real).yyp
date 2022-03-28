@@ -15,14 +15,11 @@
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":2,},
     {"id":{"name":"spr_title","path":"sprites/spr_title/spr_title.yy",},"order":6,},
     {"id":{"name":"til_background","path":"tilesets/til_background/til_background.yy",},"order":0,},
-<<<<<<< HEAD
     {"id":{"name":"snd_hit","path":"sounds/snd_hit/snd_hit.yy",},"order":1,},
 <<<<<<< HEAD
     {"id":{"name":"spr_dark","path":"sprites/spr_dark/spr_dark.yy",},"order":5,},
 =======
 >>>>>>> ddd3e6e60b05228e64d18366844d8ce8203f80f3
-=======
->>>>>>> parent of ddd3e6e (Add sound when enemy is hit)
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},"order":0,},

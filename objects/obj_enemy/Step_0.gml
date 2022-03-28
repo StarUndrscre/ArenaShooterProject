@@ -17,10 +17,6 @@ if (instance_exists(obj_player) and start_moving == 1)
 if (hp <= 0) {
 	ai_enabled = 0;
 	audio_play_sound(snd_death,0,0);
-	image_alpha -= 0.09; // fade out
-}
-
-if (image_alpha <= 0) {
 	instance_destroy();
 	with(obj_score) plr_score = plr_score + 5;
 }
