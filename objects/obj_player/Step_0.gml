@@ -56,36 +56,36 @@ else if (x = xprevious and y = yprevious){
 }
 
 // [debug] Restart keybind
-if (keyboard_check(ord("R"))) restart_timer = restart_timer + 0.1;
-if (restart_timer >= 2) game_restart();
+//if (keyboard_check(ord("R"))) restart_timer = restart_timer + 0.1;
+//if (restart_timer >= 2) game_restart();
 
 // [debug] Spawn enemy on cursor when F is pressed
-if (keyboard_check_pressed(ord("F")))
-{
-	instance_create_layer(mouse_x,mouse_y,"EnemyLayer",obj_enemy)
-}
+//if (keyboard_check_pressed(ord("F")))
+//{
+//	instance_create_layer(mouse_x,mouse_y,"EnemyLayer",obj_enemy)
+//}
 
 // [debug] Disable enemy AI when G is pressed
-if (keyboard_check_pressed(ord("G")))
-{
-	if (instance_exists(obj_enemy) and obj_enemy.ai_enabled == 1) {
-		obj_enemy.ai_enabled = 0
-		show_debug_message("AI Disabled")
-	} else if instance_exists(obj_enemy) and (obj_enemy.ai_enabled == not 1) {
-		obj_enemy.ai_enabled = 1
-		show_debug_message("AI Enabled")
-	}
-}
+//if (keyboard_check_pressed(ord("G")))
+//{
+//	if (instance_exists(obj_enemy) and obj_enemy.ai_enabled == 1) {
+//		obj_enemy.ai_enabled = 0
+//		show_debug_message("AI Disabled")
+//	} else if instance_exists(obj_enemy) and (obj_enemy.ai_enabled == not 1) {
+//		obj_enemy.ai_enabled = 1
+//		show_debug_message("AI Enabled")
+//	}
+//}
 
 // [debug] Swap playtest rooms
-if (room == rm_game and keyboard_check_pressed(vk_space))
-{
-	room_goto(rm_test)
-	show_debug_message("Teleported to Playtest Room!")
-} else if (room == rm_test and keyboard_check_pressed(vk_space)) {
-	room_goto(rm_game)
-	show_debug_message("Teleported to Enemy Room!")
-}
+//if (room == rm_game and keyboard_check_pressed(vk_space))
+//{
+//	room_goto(rm_test)
+//	show_debug_message("Teleported to Playtest Room!")
+//} else if (room == rm_test and keyboard_check_pressed(vk_space)) {
+//	room_goto(rm_game)
+//	show_debug_message("Teleported to Enemy Room!")
+//}
 
 /*
 	Resources used:
