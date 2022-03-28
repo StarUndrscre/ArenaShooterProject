@@ -39,8 +39,8 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_5BB010A2","path":"rooms/PlaytestRoom/PlaytestRoom.yy",},
-    {"name":"inst_5A3E2ED8","path":"rooms/PlaytestRoom/PlaytestRoom.yy",},
+    {"name":"inst_5BB010A2","path":"rooms/rm_test/rm_test.yy",},
+    {"name":"inst_5A3E2ED8","path":"rooms/rm_test/rm_test.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -68,7 +68,7 @@
     "path": "folders/Rooms.yy",
   },
   "resourceVersion": "1.0",
-  "name": "PlaytestRoom",
+  "name": "rm_test",
   "tags": [],
   "resourceType": "GMRoom",
 }

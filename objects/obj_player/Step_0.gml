@@ -78,12 +78,12 @@ if (keyboard_check_pressed(ord("G")))
 }
 
 // [debug] Swap playtest rooms
-if (room == Room1 and keyboard_check_pressed(vk_space))
+if (room == rm_game and keyboard_check_pressed(vk_space))
 {
-	room_goto(PlaytestRoom)
+	room_goto(rm_test)
 	show_debug_message("Teleported to Playtest Room!")
-} else if (room == PlaytestRoom and keyboard_check_pressed(vk_space)) {
-	room_goto(Room1)
+} else if (room == rm_test and keyboard_check_pressed(vk_space)) {
+	room_goto(rm_game)
 	show_debug_message("Teleported to Enemy Room!")
 }
 
