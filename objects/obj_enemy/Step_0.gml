@@ -16,7 +16,10 @@ if (instance_exists(obj_player) and start_moving == 1)
 
 if (hp <= 0) {
 	ai_enabled = 0;
-	audio_play_sound(snd_death,0,0);
+	image_alpha -= 0.05;
+}
+
+if (image_alpha <= 0) {
 	instance_destroy();
 	with(obj_score) plr_score = plr_score + 5;
 }
@@ -31,5 +34,8 @@ image_angle = direction;
 
 		Making the enemy flash when hit
 			https://www.youtube.com/watch?v=g7uhXXUgeAM
+
+		Help with either removing hitbox or checking variables on other object in place_meeting
+			https://www.reddit.com/r/gamemaker/comments/3rk5ap/help_with_either_removing_hitbox_or_checking/
 
 */

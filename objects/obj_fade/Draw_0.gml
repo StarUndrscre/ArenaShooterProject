@@ -4,7 +4,7 @@ if (a == 1)
 {
 	room_goto(rm_game);
 	fade = -1;
-} else if (a == 0 and fade == -1)
+} else if (a == 0) && (fade == -1)
 {
 	instance_destroy();
 }
