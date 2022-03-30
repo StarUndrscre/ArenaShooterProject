@@ -1,14 +1,16 @@
 with(other)
 {	
-	var dmg = random(2); // generate random number between 0 and 2
-	hp = hp - dmg;
-	if (hp < 0) {
+	if (hp > 0) {
+		var dmg = random(2); // generate random number between 0 and 2
+		hp = hp - dmg;
+	} else if (hp <= 0) {
 		hp = 0;
 	}
 }
 
-instance_destroy();
-
+if (obj_enemy.hp > 0) {
+	instance_destroy();
+} else if (obj_enemy.hp <= 0) {} // this is allowed?????
 /*
 	Resources used:
 		random(); function

@@ -1,16 +1,21 @@
 with(other)
 {	
-	var dmg = random(2); // generate random number between 0 and 2
-	if (dmg < 1) {
-		dmg += 1;
-	}
-	hp = hp - dmg;
-	if (hp < 0) {
+	if (hp > 0) {
+		var dmg = random(2); // generate random number between 0 and 2
+		if (dmg < 1) {
+			dmg += 1; // weird hack
+		}
+		hp = hp - dmg;
+	} else if (hp <= 0) {
 		hp = 0;
 	}
 }
 
-instance_destroy();
+if (obj_enemy.hp > 0) {
+	instance_destroy();
+} else if (obj_enemy.hp <= 0) {
+	return
+}
 
 /*
 	Resources used:

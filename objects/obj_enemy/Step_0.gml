@@ -9,14 +9,14 @@ if (point_distance(x, y, obj_player.x, obj_player.y) < r and ai_enabled == 1) //
 
 if (instance_exists(obj_player) and start_moving == 1)
 {
-	move_towards_point(obj_player.x, obj_player.y, spd)
+	move_towards_point(obj_player.x, obj_player.y, spd);
 } else if (start_moving == 0) {
-	move_towards_point(x, y, 0)
+	move_towards_point(obj_player.x, obj_player.y, 0)
 }
 
 if (hp <= 0) {
 	ai_enabled = 0;
-	image_alpha -= 0.05;
+	image_alpha -= 0.1;
 }
 
 if (image_alpha <= 0) {
