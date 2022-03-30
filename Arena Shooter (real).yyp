@@ -20,6 +20,7 @@
     {"id":{"name":"snd_hit","path":"sounds/snd_hit/snd_hit.yy",},"order":1,},
     {"id":{"name":"spr_dark","path":"sprites/spr_dark/spr_dark.yy",},"order":5,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
+    {"id":{"name":"obj_spawner","path":"objects/obj_spawner/obj_spawner.yy",},"order":7,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},"order":0,},
   ],
