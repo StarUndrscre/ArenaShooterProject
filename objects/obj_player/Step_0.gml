@@ -55,6 +55,22 @@ else if (x = xprevious and y = yprevious){
    plr_moving = 0;
 }
 
+// we're dead! start the death stuff
+if (alive <= 0) then {
+	scrn_cooldown -= 1;
+	plr_speed = min(plr_speed-0.025,0);
+	obj_enemy.spd = min(obj_enemy.spd-0.025,0);
+	if (obj_enemy.spd < 0) obj_enemy.spd = 0;
+	image_angle = 0;
+	cooldown = infinity; // make player not shoot bullets anymore
+}
+
+if (scrn_cooldown < 0) {
+	instance_create_layer(0,0,"OverLayer",obj_fade);
+	obj_fade.fade = 1;
+	obj_deathscrn.fade = -1;
+}
+
 // [debug] Restart keybind
 //if (keyboard_check(ord("R"))) restart_timer = restart_timer + 0.1;
 //if (restart_timer >= 2) game_restart();

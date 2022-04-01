@@ -5,4 +5,5 @@ breathe = 0;
 sprint = 0;
 shotgun_use = 0;
 shotgun_cooldown = 0;
-scrn_cooldown = 0;
+scrn_cooldown = 120;
+alive = 1;
