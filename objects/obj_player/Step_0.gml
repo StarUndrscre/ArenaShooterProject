@@ -56,7 +56,8 @@ else if (x = xprevious and y = yprevious){
 }
 
 // we're dead! start the death stuff
-if (alive <= 0) then {
+if (hits <= 0) then {
+	obj_deathscrn.fade = 1;
 	scrn_cooldown -= 1;
 	plr_speed = min(plr_speed-0.025,0);
 	obj_enemy.spd = min(obj_enemy.spd-0.025,0);
