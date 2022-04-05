@@ -2,7 +2,7 @@ if invincible == 0 {
 	hits -= 1;
 	
 	invincible = 1;
-	alarm[1] = 180;
+	alarm[1] = 120;
 	alarm[2] = 1;
 }
 

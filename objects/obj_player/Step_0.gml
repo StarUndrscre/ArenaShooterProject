@@ -9,7 +9,7 @@ image_angle = point_direction(x,y,mouse_x,mouse_y);
 
 // check if shift or control is being held down
 if (keyboard_check(vk_shift)) sprint = 1;
-if (!keyboard_check(vk_shift)) sprint = 0;
+if (!keyboard_check(vk_shift)) sprint = 0
 
 if (keyboard_check(vk_control)) breathe = 1;
 if (!keyboard_check(vk_control)) breathe = 0;
@@ -72,38 +72,6 @@ if (scrn_cooldown < 0) {
 	obj_deathscrn.fade = -1;
 }
 
-// [debug] Restart keybind
-//if (keyboard_check(ord("R"))) restart_timer = restart_timer + 0.1;
-//if (restart_timer >= 2) game_restart();
-
-// [debug] Spawn enemy on cursor when F is pressed
-//if (keyboard_check_pressed(ord("F")))
-//{
-//	instance_create_layer(mouse_x,mouse_y,"EnemyLayer",obj_enemy)
-//}
-
-// [debug] Disable enemy AI when G is pressed
-//if (keyboard_check_pressed(ord("G")))
-//{
-//	if (instance_exists(obj_enemy) and obj_enemy.ai_enabled == 1) {
-//		obj_enemy.ai_enabled = 0
-//		show_debug_message("AI Disabled")
-//	} else if instance_exists(obj_enemy) and (obj_enemy.ai_enabled == not 1) {
-//		obj_enemy.ai_enabled = 1
-//		show_debug_message("AI Enabled")
-//	}
-//}
-
-// [debug] Swap playtest rooms
-//if (room == rm_game and keyboard_check_pressed(vk_space))
-//{
-//	room_goto(rm_test)
-//	show_debug_message("Teleported to Playtest Room!")
-//} else if (room == rm_test and keyboard_check_pressed(vk_space)) {
-//	room_goto(rm_game)
-//	show_debug_message("Teleported to Enemy Room!")
-//}
-
 /*
 	Resources used:
 		Check if something is moving:
@@ -116,5 +84,5 @@ if (scrn_cooldown < 0) {
 			https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Asset_Management/Rooms/Rooms.htm
 			
 		for Loops
-			https://manual.yoyogames.com/GameMaker_Language/GML_Overview/Language_Features/for.htm			
+			https://manual.yoyogames.com/GameMaker_Language/GML_Overview/Language_Features/for.htm		
 */

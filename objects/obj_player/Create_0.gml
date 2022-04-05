@@ -6,5 +6,5 @@ sprint = 0;
 shotgun_use = 0;
 shotgun_cooldown = 0;
 scrn_cooldown = 120;
-hits = 3;
+hits = 4;
 invincible = 0;
