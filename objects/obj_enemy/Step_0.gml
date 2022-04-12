@@ -26,6 +26,8 @@ if (image_alpha <= 0) {
 
 image_angle = direction;
 
+if (flash > 0) flash -= 0.05; else flash = 0;
+
 /* 
 
 	Resources used:
@@ -37,5 +39,7 @@ image_angle = direction;
 
 		Help with either removing hitbox or checking variables on other object in place_meeting
 			https://www.reddit.com/r/gamemaker/comments/3rk5ap/help_with_either_removing_hitbox_or_checking/
-
+		
+		Coffee-Break finished Arena Shooter project
+			https://www.yoyogames.com/en/blog/coffee-break-tutorials-decal-effects-gml
 */
