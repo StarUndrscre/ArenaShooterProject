@@ -15,13 +15,7 @@ if (instance_exists(obj_player) and start_moving == 1)
 }
 
 if (hp <= 0) {
-	ai_enabled = 0;
-	image_alpha -= 0.1;
-}
-
-if (image_alpha <= 0) {
 	instance_destroy();
-	with(obj_ui) plr_score = plr_score + 5;
 }
 
 image_angle = direction;
