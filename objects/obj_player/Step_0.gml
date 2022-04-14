@@ -22,12 +22,15 @@ if (mouse_check_button_pressed(mb_right)) && (cooldown < 1)
 	} else {
 		shotgun_use += 1;
 		shotgun_cooldown = 75;
-		for (var i = 0; i < 12; i += 1)
-			{
-				instance_create_layer(x,y,"BulletsLayer",obj_bullet2)
+		for (var i = 0; i < 5; i +=1) {
+			var spread = [ -10, -5, 0, 5, 10 ];
+			var bullet = instance_create_layer(x,y,"BulletsLayer",obj_bullet2);
+			with (bullet) {
+				direction += spread[i];
 			}
 		}
 	cooldown = 60;
+	}
 }
 
 if (mouse_check_button_released(mb_left)) {
@@ -68,4 +71,7 @@ if (scrn_cooldown < 0) {
 			
 		for Loops
 			https://manual.yoyogames.com/GameMaker_Language/GML_Overview/Language_Features/for.htm		
+			
+		Arrays
+			https://manual.yoyogames.com/GameMaker_Language/GML_Overview/Arrays.htm
 */
