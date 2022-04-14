@@ -23,13 +23,13 @@ if (mouse_check_button_pressed(mb_right)) && (cooldown < 1)
 		shotgun_use += 1;
 		shotgun_cooldown = 75;
 		for (var i = 0; i < 5; i +=1) {
-			var spread = [ -10, -5, 0, 5, 10 ];
+			var spread = [ -20, -10, 0, 10, 20 ];
 			var bullet = instance_create_layer(x,y,"BulletsLayer",obj_bullet2);
 			with (bullet) {
 				direction += spread[i];
 			}
 		}
-	cooldown = 60;
+	cooldown = 30;
 	}
 }
 
