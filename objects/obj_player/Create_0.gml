@@ -1,10 +1,7 @@
 cooldown = 0;
-plr_speed = 3;
-plr_moving = 0;
-breathe = 0;
-sprint = 0;
+plr_speed = 4;
 shotgun_use = 0;
 shotgun_cooldown = 0;
 scrn_cooldown = 120;
-hits = 4;
+hits = 5;
 invincible = 0;
