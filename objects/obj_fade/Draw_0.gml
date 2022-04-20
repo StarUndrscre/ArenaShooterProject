@@ -6,6 +6,7 @@ if (a == 1 and room == rm_title)
 	fade = -1;
 } else if (a == 1 and room == rm_game)
 {
+	surface_free(obj_decal_control.decal_surf);
 	game_restart();
 } else if (a == 0) && (fade == -1)
 {
