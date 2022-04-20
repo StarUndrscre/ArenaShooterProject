@@ -1,1 +1,1 @@
-decal_surf = -1;
+decal_surf = 1;
