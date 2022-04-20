@@ -18,4 +18,4 @@ else
         }
     surface_reset_target();
     draw_surface(decal_surf, 0, 0);
-    }
+}
