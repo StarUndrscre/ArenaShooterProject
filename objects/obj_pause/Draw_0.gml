@@ -18,7 +18,6 @@ else
     draw_rectangle_colour(0, 0, room_width, room_height, c_black, c_black, c_black, c_black, false);
     draw_set_alpha(1);
     draw_set_halign(fa_center);
-    draw_text_transformed_colour(cw / 2, ch / 2, "PAUSED", 2, 2, 0, c_aqua, c_aqua, c_aqua, c_aqua, 1);
-    draw_set_halign(fa_left);
+    draw_text_transformed_colour(cx + cw / 2, cy + ch / 2, "PAUSED", 2, 2, 0, c_aqua, c_aqua, c_aqua, c_aqua, 1);
     }
 }
