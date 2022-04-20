@@ -1,6 +1,6 @@
 if room == rm_game
 {
-if keyboard_check_pressed(ord("P"))
+if (keyboard_check_pressed(ord("P")) or keyboard_check_pressed(vk_escape))
     {
     paused = !paused;
     if paused == false
