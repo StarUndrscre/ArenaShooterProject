@@ -11,7 +11,7 @@ image_angle = point_direction(x,y,mouse_x,mouse_y);
 if (mouse_check_button(mb_left)) && (cooldown < 1)
 {
 	instance_create_layer(x,y,"BulletsLayer",obj_bullet)
-	cooldown = 10;
+	if (obj_ui.plr_level == 3) {cooldown = 5} else {cooldown = 10}
 	plr_speed = 2;
 }
 
@@ -29,7 +29,7 @@ if (mouse_check_button_pressed(mb_right)) && (cooldown < 1)
 				direction += spread[i];
 			}
 		}
-	cooldown = 30;
+	if (obj_ui.plr_level == 3) {cooldown = 15} else {cooldown = 30}
 	}
 }
 
