@@ -8,6 +8,7 @@
     {"id":{"name":"obj_deathscrn","path":"objects/obj_deathscrn/obj_deathscrn.yy",},"order":8,},
     {"id":{"name":"obj_fragment","path":"objects/obj_fragment/obj_fragment.yy",},"order":10,},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"order":1,},
+    {"id":{"name":"Screenshake","path":"scripts/Screenshake/Screenshake.yy",},"order":0,},
     {"id":{"name":"fnt_score","path":"fonts/fnt_score/fnt_score.yy",},"order":0,},
     {"id":{"name":"spr_fragment","path":"sprites/spr_fragment/spr_fragment.yy",},"order":8,},
     {"id":{"name":"obj_shake","path":"objects/obj_shake/obj_shake.yy",},"order":14,},

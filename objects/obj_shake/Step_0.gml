@@ -1,9 +1,18 @@
-//slowly decay any applied shake
-shake *= 0.9;
+if (shake) 
+{ 
+   shake_time -= 1; 
+   var _xval = choose(-shake_magnitude, shake_magnitude); 
+   var _yval = choose(-shake_magnitude, shake_magnitude); 
+   camera_set_view_pos(view_camera[0], _xval, _yval); 
 
-//screenshake
-var cam = view_camera[0] 
-camera_set_view_pos(cam,camera_get_view_x(cam)+random_range(-shake,shake),camera_get_view_y(cam)+random_range(-shake,shake)) 
+   if (shake_time <= 0) 
+   { 
+      shake_magnitude -= shake_fade; 
 
-// Screenshake code taken from the finished Arena Shooter game from Yoyo Games
-//		https://gamemaker.io/en/blog/coffee-break-tutorials-decal-effects-gml
+      if (shake_magnitude <= 0) 
+      { 
+         camera_set_view_pos(view_camera[0], 0, 0); 
+         shake = false; 
+      } 
+   } 
+}
