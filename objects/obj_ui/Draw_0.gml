@@ -9,7 +9,7 @@ if plr_level == 5 { return true } else
 {
 	draw_text(cx + cw / 2, cy + 25, string(plr_score));
 	if obj_player.hits >= 1 {
-		draw_text(cx + cw / 8, cy + 25, string(obj_player.hits) + " hp");
+		draw_text((cx + cw / 2) - 400, cy + 25, string(obj_player.hits) + " hp");
 	}
-	draw_text(cx + cw / 1.33, cy + 25, "Level " + string(plr_level));
+	draw_text((cx + cw / 2) + 400, cy + 25, "Level " + string(plr_level));
 }
