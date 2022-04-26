@@ -58,6 +58,8 @@ if (scrn_cooldown < 0) {
 	obj_deathscrn.fade = -1;
 }
 
+if (combo == 5) && (hits < 5) { hits += 1; combo = 0; }
+
 /*
 	Resources used:
 		Check if something is moving:

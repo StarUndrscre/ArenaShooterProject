@@ -5,3 +5,4 @@ shotgun_cooldown = 0;
 scrn_cooldown = 120;
 hits = 5;
 invincible = 0;
+combo = 0;

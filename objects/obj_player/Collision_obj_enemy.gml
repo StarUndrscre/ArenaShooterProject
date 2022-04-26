@@ -1,5 +1,6 @@
 if invincible == 0 {
 	hits -= 1;
+	combo = 0;
 	
 	invincible = 1;
 	alarm[1] = 120;
