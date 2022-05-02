@@ -11,6 +11,7 @@ with(other)
 	}
 }
 
+audio_play_sound(snd_enm_hit,0,0);
 instance_destroy();
 
 /*

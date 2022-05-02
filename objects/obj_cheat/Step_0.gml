@@ -20,6 +20,7 @@ if(keyboard_check_pressed(vk_anykey)) // only do the check when a key is pressed
 		cheats = true;
 		godIndex = 0;
 		if iddqd == false {
+			audio_play_sound(snd_plr_levelup,0,0);
 			iddqd = true;
 			with(obj_player) {
 				invincible = 1;
