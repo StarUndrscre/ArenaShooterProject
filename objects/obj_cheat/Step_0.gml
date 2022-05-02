@@ -53,6 +53,33 @@ if(keyboard_check_pressed(vk_anykey)) // only do the check when a key is pressed
 		instance_destroy(obj_enemy);
 	}
 	
+	if(ds_list_find_value(beholdSeq, beholdIndex) == lastKey)
+	{
+		beholdIndex++;
+	}
+	else
+	{
+		beholdIndex = 0;
+	}
+
+	if(ds_list_size(beholdSeq) == beholdIndex)
+	{
+		cheats = true;
+		beholdIndex = 0;
+		if idbehold == false {
+			idbehold = true;
+			audio_play_sound(snd_pause,0,0);
+			instance_deactivate_object(obj_director);
+			instance_deactivate_object(obj_spawner);
+			with (obj_enemy) ai_enabled = 0;
+		} else if idbehold == true {
+			idbehold = false;
+			instance_activate_object(obj_director);
+			instance_activate_object(obj_spawner);
+			with (obj_enemy) ai_enabled = 1;
+		}
+	}
+	
 	// template
 	/* if(ds_list_find_value(sequence, index) == lastKey)
 	{

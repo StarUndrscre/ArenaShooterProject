@@ -16,7 +16,17 @@ for (var i = 1; i < 11; i++) {
 	ds_list_add(choppersSeq, char_code);
 }
 
+beholdIndex = 0;
+beholdSeq = ds_list_create();
+
+for (var i = 1; i < 9; i++) {
+	var code = "idbehold";
+	var char_code = string_ord_at(code, i);
+	ds_list_add(beholdSeq, char_code);
+}
+
 iddqd = false;
+idbehold = false;
 cheats = false;
 
 lastKey = 0;
