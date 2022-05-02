@@ -8,9 +8,8 @@ with(other)
 	}
 }
 
-if (obj_enemy.hp > 0) {
-	instance_destroy();
-} else if (obj_enemy.hp <= 0) {} // this is allowed?????
+instance_destroy();
+
 /*
 	Resources used:
 		random(); function

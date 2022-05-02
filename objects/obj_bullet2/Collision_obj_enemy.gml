@@ -11,11 +11,7 @@ with(other)
 	}
 }
 
-if (obj_enemy.hp > 0) {
-	instance_destroy();
-} else if (obj_enemy.hp <= 0) {
-	return
-}
+instance_destroy();
 
 /*
 	Resources used:
