@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_hit.wav",
-  "duration": 0.043855,
+  "soundFile": "snd_enm_kill.wav",
+  "duration": 0.405964,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_hit",
+  "name": "snd_enm_kill",
   "tags": [],
   "resourceType": "GMSound",
 }

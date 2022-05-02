@@ -11,7 +11,13 @@ image_angle = point_direction(x,y,mouse_x,mouse_y);
 if (mouse_check_button(mb_left)) && (cooldown < 1)
 {
 	instance_create_layer(x,y,"BulletsLayer",obj_bullet)
-	if (obj_ui.plr_level == 3) {cooldown = 5} else {cooldown = 10}
+	if (obj_ui.plr_level == 3) {
+		cooldown = 5; 
+		audio_play_sound(snd_plr_shoot,0,0);
+	} else {
+		cooldown = 10; 
+		audio_play_sound(snd_plr_shoot,0,0);
+	}
 	plr_speed = 2;
 }
 
@@ -29,7 +35,13 @@ if (mouse_check_button_pressed(mb_right)) && (cooldown < 1)
 				direction += spread[i];
 			}
 		}
-	if (obj_ui.plr_level == 3) {cooldown = 15} else {cooldown = 30}
+	if (obj_ui.plr_level == 3) {
+			cooldown = 15;
+			audio_play_sound(snd_plr_sgshoot,0,0);
+		} else {
+			cooldown = 30
+			audio_play_sound(snd_plr_sgshoot,0,0);
+		}
 	}
 }
 

@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_death.wav",
-  "duration": 0.11644,
+  "soundFile": "snd_plr_sgshoot.wav",
+  "duration": 0.26161,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_death",
+  "name": "snd_plr_sgshoot",
   "tags": [],
   "resourceType": "GMSound",
 }

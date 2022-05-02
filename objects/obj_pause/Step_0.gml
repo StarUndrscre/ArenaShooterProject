@@ -9,6 +9,10 @@ if (keyboard_check_pressed(vk_escape))
 			surface_free(paused_surf);
 			paused_surf = -1;
         }
+	if paused == true
+		{
+			audio_play_sound(snd_pause,0,0);
+		}
     }
 if paused == true
     {
