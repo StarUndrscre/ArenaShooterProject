@@ -80,6 +80,26 @@ if(keyboard_check_pressed(vk_anykey)) // only do the check when a key is pressed
 		}
 	}
 	
+	if(ds_list_find_value(coolSeq, coolIndex) == lastKey)
+	{
+		coolIndex++;
+	}
+	else
+	{
+		coolIndex = 0;
+	}
+
+	if(ds_list_size(coolSeq) == coolIndex)
+	{
+		cheats = true;
+		coolIndex = 0;
+		if idkfa == false {
+			idkfa = true;
+		} else if idkfa == true {
+			idkfa = false;
+		}
+	}
+	
 	// template
 	/* if(ds_list_find_value(sequence, index) == lastKey)
 	{

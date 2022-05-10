@@ -11,12 +11,16 @@ image_angle = point_direction(x,y,mouse_x,mouse_y);
 if (mouse_check_button(mb_left)) && (cooldown < 1)
 {
 	instance_create_layer(x,y,"BulletsLayer",obj_bullet)
-	if (obj_ui.plr_level == 3) {
-		cooldown = 5; 
-		audio_play_sound(snd_plr_shoot,0,0);
+	if obj_cheat.idkfa == 0 {
+		if (obj_ui.plr_level == 3) {
+			cooldown = 5; 
+			audio_play_sound(snd_plr_shoot,0,0);
+		} else {
+			cooldown = 10; 
+			audio_play_sound(snd_plr_shoot,0,0);
+		}
 	} else {
-		cooldown = 10; 
-		audio_play_sound(snd_plr_shoot,0,0);
+		cooldown = 0;
 	}
 	plr_speed = 2;
 }
@@ -24,24 +28,30 @@ if (mouse_check_button(mb_left)) && (cooldown < 1)
 if (mouse_check_button_pressed(mb_right)) && (cooldown < 1)
 {	
 	if (shotgun_use > 3 and shotgun_cooldown > 0) {
-		return false
-	} else {
-		shotgun_use += 1;
-		shotgun_cooldown = 75;
-		for (var i = 0; i < 5; i +=1) {
-			var spread = [ -20, -10, 0, 10, 20 ];
-			var bullet = instance_create_layer(x,y,"BulletsLayer",obj_bullet2);
-			with (bullet) {
-				direction += spread[i];
+			return false
+		} else {
+			shotgun_use += 1;
+			shotgun_cooldown = 75;
+			for (var i = 0; i < 5; i +=1) {
+				var spread = [ -20, -10, 0, 10, 20 ];
+				var bullet = instance_create_layer(x,y,"BulletsLayer",obj_bullet2);
+				with (bullet) {
+					direction += spread[i];
+				}
 			}
 		}
-	if (obj_ui.plr_level == 3) {
+	if obj_cheat.idkfa == 0 {
+		if (obj_ui.plr_level == 3) {
 			cooldown = 15;
 			audio_play_sound(snd_plr_sgshoot,0,0);
 		} else {
 			cooldown = 30
 			audio_play_sound(snd_plr_sgshoot,0,0);
 		}
+	} else {
+		cooldown = 0;
+		shotgun_use = 0;
+		shotgun_cooldown = 0;
 	}
 }
 

@@ -25,8 +25,18 @@ for (var i = 1; i < 9; i++) {
 	ds_list_add(beholdSeq, char_code);
 }
 
+coolIndex = 0;
+coolSeq = ds_list_create();
+
+for (var i = 1; i < 6; i++) {
+	var code = "idkfa";
+	var char_code = string_ord_at(code, i);
+	ds_list_add(coolSeq, char_code);
+}
+
 iddqd = false;
 idbehold = false;
+idkfa = false;
 cheats = false;
 
 lastKey = 0;

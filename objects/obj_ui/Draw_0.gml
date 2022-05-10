@@ -7,12 +7,16 @@ draw_set_font(fnt_score);
 draw_set_color(c_white); // Text is already white ingame, but setting this just in case
 if plr_level == 5 { return true } else
 {
-	if obj_player.hits >= 1 {
-		draw_text((cx + cw / 2) - 400, cy + 25, string(obj_player.hits) + " hp");
+	if obj_cheat.iddqd == 0 {
+		if obj_player.hits >= 1 {
+			draw_text((cx + cw / 2) - 400, cy + 25, string(obj_player.hits) + " hp");
+		}
+	} else {
+		draw_text((cx + cw / 2) - 400, cy + 25, "God mode");
 	}
 	draw_text((cx + cw / 2) + 400, cy + 25, "Level " + string(plr_level));
 	if obj_cheat.cheats == true { 
-		draw_text(cx + cw / 2, cy + 25, "In cheat mode!");
+		draw_text(cx + cw / 2, cy + 25, "Using cheats!");
 	} else {
 		draw_text(cx + cw / 2, cy + 25, "Score: " + string(plr_score));
 	}
