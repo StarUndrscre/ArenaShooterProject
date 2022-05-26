@@ -5,7 +5,11 @@ if (keyboard_check(vk_left) or keyboard_check(ord("A"))) x = x - plr_speed;
 if (keyboard_check(vk_up) or keyboard_check(ord("W"))) y = y - plr_speed;
 if (keyboard_check(vk_down) or keyboard_check(ord("S"))) y = y + plr_speed;
 
-image_angle = point_direction(x,y,mouse_x,mouse_y);
+direction = point_direction(x,y,mouse_x,mouse_y);
+image_angle = direction
+
+show_debug_message("Player: " + string(x) + ", " + string(y))
+show_debug_message("Mouse: " + string(mouse_x) + ", " + string(mouse_y))
 
 // shoot code
 if (mouse_check_button(mb_left)) && (cooldown < 1)

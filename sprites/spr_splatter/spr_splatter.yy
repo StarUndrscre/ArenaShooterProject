@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_splatter","path":"sprites/spr_splatter/spr_splatter.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_splatter",
     "tags": [],
     "resourceType": "GMSequence",
