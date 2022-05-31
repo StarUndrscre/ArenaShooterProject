@@ -117,3 +117,10 @@ if(keyboard_check_pressed(vk_anykey)) // only do the check when a key is pressed
 		code here
 	} */
 }
+
+if ((obj_pause.paused == false) and (idbehold == true)) {
+	instance_deactivate_object(obj_director);
+	instance_deactivate_object(obj_spawner);
+	with (obj_enemy) ai_enabled = 0;
+} // This has to be outside of the cheat itself since the code doesn't execute when the cheat code hasn't been applied
+	

@@ -16,6 +16,7 @@
     {"id":{"name":"snd_plr_hurt","path":"sounds/snd_plr_hurt/snd_plr_hurt.yy",},"order":3,},
     {"id":{"name":"snd_enm_kill","path":"sounds/snd_enm_kill/snd_enm_kill.yy",},"order":0,},
     {"id":{"name":"obj_bullet2","path":"objects/obj_bullet2/obj_bullet2.yy",},"order":4,},
+    {"id":{"name":"obj_mousetest","path":"objects/obj_mousetest/obj_mousetest.yy",},"order":17,},
     {"id":{"name":"obj_splatter","path":"objects/obj_splatter/obj_splatter.yy",},"order":12,},
     {"id":{"name":"snd_pause","path":"sounds/snd_pause/snd_pause.yy",},"order":7,},
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},"order":5,},
