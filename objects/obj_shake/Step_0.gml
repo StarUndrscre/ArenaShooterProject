@@ -20,4 +20,4 @@ if (shake)
    } 
 }
 
-camera_set_view_pos(view_camera[0], cam_x, cam_y);
+//camera_set_view_pos(view_camera[0], cam_x, cam_y);

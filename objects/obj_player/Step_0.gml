@@ -8,15 +8,15 @@ if (keyboard_check(vk_down) or keyboard_check(ord("S"))) y = y + plr_speed;
 direction = point_direction(x,y,mouse_x,mouse_y);
 image_angle = direction
 
-show_debug_message("Player: " + string(x) + ", " + string(y))
-show_debug_message("Mouse: " + string(mouse_x) + ", " + string(mouse_y))
+//show_debug_message("Player: " + string(x) + ", " + string(y))
+//show_debug_message("Mouse: " + string(mouse_x) + ", " + string(mouse_y))
 
 // shoot code
 if (mouse_check_button(mb_left)) && (cooldown < 1)
 {
 	instance_create_layer(x,y,"BulletsLayer",obj_bullet)
 	if obj_cheat.idkfa == 0 {
-		if (obj_ui.plr_level == 3) {
+		if (obj_stats.plr_level >= 5) {
 			cooldown = 5; 
 			audio_play_sound(snd_plr_shoot,0,0);
 		} else {
@@ -45,7 +45,7 @@ if (mouse_check_button_pressed(mb_right)) && (cooldown < 1)
 			}
 		}
 	if obj_cheat.idkfa == 0 {
-		if (obj_ui.plr_level == 3) {
+		if (obj_stats.plr_level >= 5) {
 			cooldown = 15;
 			audio_play_sound(snd_plr_sgshoot,0,0);
 		} else {

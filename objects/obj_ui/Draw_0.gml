@@ -1,3 +1,6 @@
+plr_score = obj_stats.plr_score;
+plr_level = obj_stats.plr_level;
+
 var cx = camera_get_view_x(view_camera[0]);
 var cy = camera_get_view_y(view_camera[0]);
 var cw = camera_get_view_width(view_camera[0]);
@@ -5,19 +8,17 @@ var cw = camera_get_view_width(view_camera[0]);
 
 draw_set_font(fnt_score);
 draw_set_color(c_white); // Text is already white ingame, but setting this just in case
-if plr_level == 5 { return true } else
-{
-	if obj_cheat.iddqd == 0 {
-		if obj_player.hits >= 1 {
-			draw_text((cx + cw / 2) - 400, cy + 25, string(obj_player.hits) + " hp");
-		}
-	} else {
-		draw_text((cx + cw / 2) - 400, cy + 25, "God mode");
+
+if obj_cheat.iddqd == 0 {
+	if obj_player.hits >= 1 {
+		draw_text((cx + cw / 2) - 400, cy + 25, string(obj_player.hits) + " hp");
 	}
-	draw_text((cx + cw / 2) + 400, cy + 25, "Level " + string(plr_level));
-	if obj_cheat.cheats == true { 
-		draw_text(cx + cw / 2, cy + 25, "Using cheats!");
-	} else {
-		draw_text(cx + cw / 2, cy + 25, "Score: " + string(plr_score));
-	}
+} else {
+	draw_text((cx + cw / 2) - 400, cy + 25, "God mode");
+}
+draw_text((cx + cw / 2) + 400, cy + 25, "Level " + string(plr_level));
+if obj_cheat.cheats == true { 
+	draw_text(cx + cw / 2, cy + 25, "Using cheats!");
+} else {
+	draw_text(cx + cw / 2, cy + 25, "Score: " + string(plr_score));
 }
