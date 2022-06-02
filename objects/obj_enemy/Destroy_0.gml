@@ -4,7 +4,7 @@ with (instance_create_layer(x,y,"SplatterLayer",obj_splatter)) image_angle = oth
 
 var ableToSpawn = random_range(0,2);
 show_debug_message(ableToSpawn)
-if ableToSpawn >= 1.25 {
+if ableToSpawn >= 1 {
 	instance_create_layer(x,y,"PlayerLayer",obj_health);
 }
 
