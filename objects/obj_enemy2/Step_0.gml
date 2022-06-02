@@ -1,12 +1,3 @@
-// check if we are in distance of player
-if (point_distance(x, y, obj_player.x, obj_player.y) < r and ai_enabled == 1) // r is the area radius
-{
-	start_moving = 1;
-} else
-{
-	start_moving = 0;
-}
-
 if (instance_exists(obj_player) and start_moving == 1)
 {
 	move_towards_point(obj_player.x, obj_player.y, spd);
@@ -21,6 +12,25 @@ if (hp <= 0) {
 image_angle = direction;
 
 if (flash > 0) flash -= 0.05; else flash = 0;
+
+if timer >= 100 && can_shoot == 0 {
+	roll = floor(random_range(0,3));
+	if roll >= 2 {
+		start_moving = 0;
+		can_shoot = 1;
+	}
+	
+	timer = 0;
+}
+
+if timer >= 45 && can_shoot == 1 {
+	instance_create_layer(x,y,"BulletsLayer",obj_bullet_enm);
+	start_moving = 1;
+	can_shoot = 0;
+	timer = 0;
+}
+
+timer++;
 
 /* 
 

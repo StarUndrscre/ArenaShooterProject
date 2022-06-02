@@ -5,3 +5,7 @@ start_moving = 1;
 ai_enabled = 1;
 flash = 0;
 cooldown = 0;
+
+can_shoot = 0;
+roll = 0;
+timer = 0;
