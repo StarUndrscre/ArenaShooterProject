@@ -3,6 +3,5 @@ plr_speed = 4;
 shotgun_use = 0;
 shotgun_cooldown = 0;
 scrn_cooldown = 120;
-hits = 5;
+hits = 10;
 invincible = 0;
-combo = 0;

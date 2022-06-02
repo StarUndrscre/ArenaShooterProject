@@ -1,13 +1,15 @@
 with(obj_stats) if obj_cheat.cheats == false {plr_score = plr_score + 5;}
-with(obj_player) combo++;
-repeat(choose(5,8)) instance_create_layer(x,y,"SplatterLayer",obj_fragment);
+repeat(floor(choose(5,8))) instance_create_layer(x,y,"SplatterLayer",obj_fragment);
 with (instance_create_layer(x,y,"SplatterLayer",obj_splatter)) image_angle = other.direction;
 
-var rng1 = random(30)
-if rng1 <= 15 {rng1 = 15}
+var ableToSpawn = random_range(0,2);
+show_debug_message(ableToSpawn)
+if ableToSpawn >= 1.25 {
+	instance_create_layer(x,y,"PlayerLayer",obj_health);
+}
 
-var rng2 = random(9)
-if rng2 <= 3 {rng2 = 3}
+var rng1 = random_range(15,30);
+var rng2 = random_range(3,9);
 
 screenshake(rng1, rng2, 0.3);
 
