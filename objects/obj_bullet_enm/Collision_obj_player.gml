@@ -1,8 +1,3 @@
-with(other)
-{	
-	hits -= 2;
-}
-
 audio_play_sound(snd_plr_hurt,0,0);
 instance_destroy();
 
