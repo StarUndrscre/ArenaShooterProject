@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_fragment2",
-    "path": "sprites/spr_fragment2/spr_fragment2.yy",
+    "name": "spr_fragment",
+    "path": "sprites/spr_fragment/spr_fragment.yy",
   },
   "solid": false,
   "visible": true,
