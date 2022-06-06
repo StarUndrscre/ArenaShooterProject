@@ -6,3 +6,10 @@ if (hp <= 0 and cooldown == 0) {
 	cooldown = 30;
 	cooldown -= 1;
 }
+
+if (can_shoot == 1) {
+	instance_create_layer(x,y,"BulletsLayer",obj_bullet_enm);
+	start_moving = 1;
+	can_shoot = 0;
+	timer = 0;
+}

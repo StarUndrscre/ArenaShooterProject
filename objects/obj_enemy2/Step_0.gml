@@ -23,7 +23,9 @@ if timer >= 100 && can_shoot == 0 {
 	timer = 0;
 }
 
-if timer >= 45 && can_shoot == 1 {
+if (can_shoot == 1) flash += 0.07;
+
+if (timer >= 45 && can_shoot == 1) {
 	instance_create_layer(x,y,"BulletsLayer",obj_bullet_enm);
 	start_moving = 1;
 	can_shoot = 0;
