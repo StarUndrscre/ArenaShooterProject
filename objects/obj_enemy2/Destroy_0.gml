@@ -1,6 +1,6 @@
 with(obj_stats) if obj_cheat.cheats == false {plr_score = plr_score + 5;}
-repeat(floor(choose(5,8))) instance_create_layer(x,y,"SplatterLayer",obj_fragment);
-with (instance_create_layer(x,y,"SplatterLayer",obj_splatter)) image_angle = other.direction;
+repeat(floor(choose(5,8))) instance_create_layer(x,y,"SplatterLayer",obj_fragment2);
+with (instance_create_layer(x,y,"SplatterLayer",obj_splatter2)) image_angle = other.direction;
 
 var ableToSpawn = random_range(0,2);
 show_debug_message(ableToSpawn)

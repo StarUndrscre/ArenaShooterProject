@@ -1,8 +1,8 @@
 y = y + sin(timer*frequency)*amplitude;
 timer++;
 
-if timer > 450 {
-	image_alpha -= 0.1;
+if timer > 900 {
+	image_alpha -= 0.05;
 }
 
 /* Resources used
