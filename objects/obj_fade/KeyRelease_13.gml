@@ -1,1 +1,1 @@
-if (a == 0) fade = 1;
+if (a == 0 and room == rm_title) fade = 1;

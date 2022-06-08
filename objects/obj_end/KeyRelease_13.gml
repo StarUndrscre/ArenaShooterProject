@@ -1,1 +1,1 @@
-obj_fade.fade = 1;
+fade = 1;
