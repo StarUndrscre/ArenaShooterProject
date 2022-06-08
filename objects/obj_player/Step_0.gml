@@ -73,12 +73,12 @@ if (hits <= 0) then {
 	scrn_cooldown -= 1;
 	plr_speed = min(plr_speed-0.005,0);
 	
-	if object_exists(obj_enemy) {
+	if instance_exists(obj_enemy) {
 		obj_enemy.spd = min(obj_enemy.spd-0.005,0);
 		if (obj_enemy.spd < 0) obj_enemy.spd = 0;
 	}
 	
-	if object_exists(obj_enemy2) {
+	if instance_exists(obj_enemy2) {
 		obj_enemy2.spd = min(obj_enemy2.spd-0.005,0);
 		if (obj_enemy2.spd < 0) obj_enemy2.spd = 0; // this is painful, but copy pasting is probably the only way to do this
 	}
