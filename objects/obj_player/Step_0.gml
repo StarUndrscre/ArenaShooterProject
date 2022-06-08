@@ -88,7 +88,6 @@ if (hits <= 0) then {
 }
 
 if (scrn_cooldown < 0) {
-	instance_create_layer(0,0,"OverLayer",obj_fade);
 	obj_fade.fade = 1;
 	obj_deathscrn.fade = -1;
 }

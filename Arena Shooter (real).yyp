@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"spr_fragment2","path":"sprites/spr_fragment2/spr_fragment2.yy",},"order":14,},
+    {"id":{"name":"obj_end","path":"objects/obj_end/obj_end.yy",},"order":25,},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":1,},
     {"id":{"name":"obj_decal_control","path":"objects/obj_decal_control/obj_decal_control.yy",},"order":13,},
     {"id":{"name":"obj_pause","path":"objects/obj_pause/obj_pause.yy",},"order":15,},
