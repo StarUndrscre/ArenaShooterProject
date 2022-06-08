@@ -7,7 +7,12 @@ if (a == 1 and room == rm_title)
 } else if (a == 1 and room == rm_game)
 {
 	surface_free(obj_decal_control.decal_surf);
-	game_restart();
+	room_goto(rm_end);
+	fade = -1;
+	a = 0;
+} else if (a == 1 and room == rm_end)
+{
+	fade = -1;
 } else if (a == 0) && (fade == -1)
 {
 	instance_destroy();
