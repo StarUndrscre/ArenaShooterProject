@@ -3,7 +3,6 @@ repeat(floor(choose(5,8))) instance_create_layer(x,y,"SplatterLayer",obj_fragmen
 with (instance_create_layer(x,y,"SplatterLayer",obj_splatter2)) image_angle = other.direction;
 
 var ableToSpawn = random_range(0,2);
-show_debug_message(ableToSpawn)
 if ableToSpawn >= 1 {
 	instance_create_layer(x,y,"PlayerLayer",obj_health);
 }
