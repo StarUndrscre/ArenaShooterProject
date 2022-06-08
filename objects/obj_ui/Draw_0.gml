@@ -7,6 +7,7 @@ var cw = camera_get_view_width(view_camera[0]);
 // var ch = camera_get_view_height(view_camera[0]);
 
 draw_set_font(fnt_score);
+draw_set_halign(fa_center); // oh my god.
 draw_set_color(c_white); // Text is already white ingame, but setting this just in case
 
 if obj_cheat.iddqd == 0 {
