@@ -71,16 +71,17 @@ if (shotgun_cooldown < 0) shotgun_use = 0;
 if (hits <= 0) then {
 	obj_deathscrn.fade = 1;
 	scrn_cooldown -= 1;
-	plr_speed = min(plr_speed-0.005,0);
+	plr_speed = 0;
+	dead = 1;
 	
 	if instance_exists(obj_enemy) {
-		obj_enemy.spd = min(obj_enemy.spd-0.005,0);
-		if (obj_enemy.spd < 0) obj_enemy.spd = 0;
+		obj_enemy.spd = 0
 	}
 	
 	if instance_exists(obj_enemy2) {
-		obj_enemy2.spd = min(obj_enemy2.spd-0.005,0);
-		if (obj_enemy2.spd < 0) obj_enemy2.spd = 0; // this is painful, but copy pasting is probably the only way to do this
+		obj_enemy2.spd = 0;
+		obj_enemy2.can_shoot = 0;
+		obj_enemy2.timer--;
 	}
 	
 	image_angle = 0;

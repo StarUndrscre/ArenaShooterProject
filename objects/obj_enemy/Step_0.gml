@@ -25,9 +25,6 @@ if (flash > 0) flash -= 0.05; else flash = 0;
 /* 
 
 	Resources used:
-		How to tell if an object is within a distance of another?
-			https://stackoverflow.com/questions/37373132/how-to-tell-if-an-object-is-within-a-distance-of-another
-
 		Making the enemy flash when hit
 			https://www.youtube.com/watch?v=g7uhXXUgeAM
 

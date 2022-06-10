@@ -1,4 +1,4 @@
-if invincible == 0 {
+if invincible == 0 and dead == 0 {
 	hits -= 1;
 	
 	invincible = 1;
@@ -9,7 +9,7 @@ if invincible == 0 {
 		audio_play_sound(snd_plr_hurt,0,0);
 	}
 	
-	if hits == 0 {
+	if hits <= 0 {
 		audio_play_sound(snd_plr_die,0,0);
 	}
 

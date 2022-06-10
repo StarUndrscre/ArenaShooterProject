@@ -1,6 +1,6 @@
-audio_play_sound(snd_plr_hurt,0,0);
-instance_destroy();
-
+if obj_player.invincible == 0 {
+	instance_destroy();
+}
 /*
 	Resources used:
 		random(); function

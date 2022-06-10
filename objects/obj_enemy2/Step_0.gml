@@ -1,5 +1,12 @@
-if (instance_exists(obj_player) and start_moving == 1)
-{
+if instance_exists(obj_player) {
+	if distance_to_object(obj_player) <= 200 {
+		spd = -1.5;
+	} else {
+		spd = 1.5;
+	}
+}
+
+if (instance_exists(obj_player) and start_moving == 1) {
 	move_towards_point(obj_player.x, obj_player.y, spd);
 } else if (start_moving == 0) {
 	move_towards_point(obj_player.x, obj_player.y, 0)
@@ -39,8 +46,8 @@ timer++;
 /* 
 
 	Resources used:
-		How to tell if an object is within a distance of another?
-			https://stackoverflow.com/questions/37373132/how-to-tell-if-an-object-is-within-a-distance-of-another
+		distance_to_object
+			https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Maths_And_Numbers/Angles_And_Distance/distance_to_object.htm
 
 		Making the enemy flash when hit
 			https://www.youtube.com/watch?v=g7uhXXUgeAM
