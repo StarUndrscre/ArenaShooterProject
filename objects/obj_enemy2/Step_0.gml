@@ -18,6 +18,7 @@ if timer >= 100 && can_shoot == 0 {
 	if roll >= 2 {
 		start_moving = 0;
 		can_shoot = 1;
+		audio_play_sound(snd_enm_ready,0,0);
 	}
 	
 	timer = 0;
@@ -26,6 +27,7 @@ if timer >= 100 && can_shoot == 0 {
 if (can_shoot == 1) flash += 0.07;
 
 if (timer >= 45 && can_shoot == 1) {
+	audio_play_sound(snd_enm_shoot,0,0);
 	instance_create_layer(x,y,"BulletsLayer",obj_bullet_enm);
 	start_moving = 1;
 	can_shoot = 0;
