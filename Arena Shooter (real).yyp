@@ -46,6 +46,7 @@
     {"id":{"name":"snd_enm_shoot","path":"sounds/snd_enm_shoot/snd_enm_shoot.yy",},"order":9,},
     {"id":{"name":"til_background","path":"tilesets/til_background/til_background.yy",},"order":0,},
     {"id":{"name":"obj_spawner2","path":"objects/obj_spawner2/obj_spawner2.yy",},"order":24,},
+    {"id":{"name":"snd_plr_heal","path":"sounds/snd_plr_heal/snd_plr_heal.yy",},"order":10,},
     {"id":{"name":"snd_enm_hit","path":"sounds/snd_enm_hit/snd_enm_hit.yy",},"order":1,},
     {"id":{"name":"spr_dark","path":"sprites/spr_dark/spr_dark.yy",},"order":5,},
     {"id":{"name":"snd_plr_sgshoot","path":"sounds/snd_plr_sgshoot/snd_plr_sgshoot.yy",},"order":5,},

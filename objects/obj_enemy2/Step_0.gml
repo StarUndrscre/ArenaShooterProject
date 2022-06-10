@@ -1,5 +1,5 @@
 if instance_exists(obj_player) {
-	if distance_to_object(obj_player) <= 200 {
+	if distance_to_point(obj_player.x, obj_player.y) <= 200 {
 		spd = -1.5;
 	} else {
 		spd = 1.5;
@@ -46,8 +46,8 @@ timer++;
 /* 
 
 	Resources used:
-		distance_to_object
-			https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Maths_And_Numbers/Angles_And_Distance/distance_to_object.htm
+		distance_to_point
+			https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Maths_And_Numbers/Angles_And_Distance/distance_to_point.htm
 
 		Making the enemy flash when hit
 			https://www.youtube.com/watch?v=g7uhXXUgeAM

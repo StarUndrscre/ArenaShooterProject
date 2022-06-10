@@ -1,0 +1,1 @@
+position_change(x - distance_to_object(obj_enemy), y - distance_to_object(obj_enemy), obj_enemy, false);
