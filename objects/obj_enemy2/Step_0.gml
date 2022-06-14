@@ -1,5 +1,5 @@
 if instance_exists(obj_player) {
-	if distance_to_point(obj_player.x, obj_player.y) <= 200 {
+	if (distance_to_point(obj_player.x, obj_player.y) <= 200) and (obj_player.dead != 1) {
 		spd = -1.5;
 	} else {
 		spd = 1.5;
