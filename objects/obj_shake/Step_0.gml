@@ -1,21 +1,11 @@
-var cam_x = obj_player.x - camera_get_view_width(view_camera[0]) / 2;
-var cam_y = obj_player.y - camera_get_view_height(view_camera[0]) / 2;
+shake *= 0.9;
 
-if (shake) 
-{ 
-   shake_time -= 1; 
-   cam_x += choose(-shake_magnitude, shake_magnitude); 
-   cam_y += choose(-shake_magnitude, shake_magnitude); 
+var cam = view_camera[0]
+camera_set_view_pos(
+	cam, 
+	camera_get_view_x(cam) + random_range(-shake, shake), 
+	camera_get_view_y(cam) + random_range(-shake, shake)
+);
 
-   if (shake_time <= 0) 
-   { 
-      shake_magnitude -= shake_fade; 
-
-      if (shake_magnitude <= 0) 
-      { 
-         cam_x = obj_player.x - camera_get_view_width(view_camera[0]) / 2;
-		 cam_y = obj_player.y - camera_get_view_height(view_camera[0]) / 2;
-         shake = false; 
-      } 
-   } 
-}
+// code taken from GameMaker's Decal Effects project
+// https://gamemaker.io/en/blog/coffee-break-tutorials-decal-effects-gml

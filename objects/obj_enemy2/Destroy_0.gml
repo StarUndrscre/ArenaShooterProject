@@ -6,13 +6,7 @@ var ableToSpawn = random_range(0,2);
 if ableToSpawn >= 1 {
 	instance_create_layer(x,y,"PlayerLayer",obj_health);
 }
-
-var rng1 = random_range(15,30);
-var rng2 = random_range(3,9);
-
-screenshake(rng1, rng2, 0.3);
-
-
+with(obj_shake) shake = 24;
 
 audio_play_sound(snd_enm_kill,0,0);
 
