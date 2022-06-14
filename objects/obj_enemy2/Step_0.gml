@@ -20,7 +20,7 @@ image_angle = direction;
 
 if (flash > 0) flash -= 0.05; else flash = 0;
 
-if timer >= 100 && can_shoot == 0 {
+if timer >= 100 && can_shoot == 0 && distance_to_point(obj_player.x, obj_player.y) <= 768 {
 	roll = floor(random_range(0,3));
 	if roll >= 2 {
 		start_moving = 0;
