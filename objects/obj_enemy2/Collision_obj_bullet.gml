@@ -9,6 +9,8 @@ if (hp > 0) {
 	}
 }
 
+if (hp <= 0) obj_stats.plr_score += 3;
+
 if (can_shoot == 1) {
 	audio_play_sound(snd_enm_shoot,0,0);
 	instance_create_layer(x,y,"BulletsLayer",obj_bullet_enm);

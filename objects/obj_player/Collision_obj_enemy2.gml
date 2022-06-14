@@ -13,4 +13,6 @@ if invincible == 0 and dead == 0 {
 		audio_play_sound(snd_plr_die,0,0);
 	}
 
+	obj_stats.plr_score -= 3;
+
 }

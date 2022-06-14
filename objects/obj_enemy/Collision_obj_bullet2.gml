@@ -1,6 +1,6 @@
 if (hp > 0) {
 	flash = 1;
-	repeat(3)
+	repeat(2)
 	with (instance_create_layer(x,y,"SplatterLayer",obj_fragment)) {
 		speed = random_range(4, 6);
 		image_index = floor(random(4));
@@ -9,8 +9,4 @@ if (hp > 0) {
 	}
 }
 
-//if (hp <= 0 and cooldown == 0) {
-//	flash = 1;
-//	cooldown = 30;
-//	cooldown -= 1;
-//}
+if (hp <= 0) obj_stats.plr_score += 2;

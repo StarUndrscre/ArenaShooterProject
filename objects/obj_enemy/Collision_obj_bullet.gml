@@ -9,8 +9,4 @@ if (hp > 0) {
 	}
 }
 
-//if (hp <= 0 and cooldown == 0) {
-//	flash = 1;
-//	cooldown = 30;
-//	cooldown -= 1;
-//}
+if (hp <= 0) obj_stats.plr_score += 3;

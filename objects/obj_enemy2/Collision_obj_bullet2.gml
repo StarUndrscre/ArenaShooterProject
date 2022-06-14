@@ -1,6 +1,6 @@
 if (hp > 0) {
 	flash = 1;
-	repeat(3)
+	repeat(2)
 	with (instance_create_layer(x,y,"SplatterLayer",obj_fragment2)) {
 		speed = random_range(4, 6);
 		image_index = floor(random(4));
@@ -8,6 +8,8 @@ if (hp > 0) {
 		image_yscale = image_xscale;
 	}
 }
+
+if (hp <= 0) obj_stats.plr_score += 2;
 
 if (can_shoot == 1) {
 	audio_play_sound(snd_enm_shoot,0,0);
