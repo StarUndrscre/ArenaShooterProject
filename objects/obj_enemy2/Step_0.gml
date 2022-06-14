@@ -1,14 +1,14 @@
 if instance_exists(obj_player) {
-	if (distance_to_point(obj_player.x, obj_player.y) <= 200) and (obj_player.dead != 1) {
+	if (distance_to_point(obj_player.x, obj_player.y) <= 200) {
 		spd = -1.5;
 	} else {
 		spd = 1.5;
 	}
 }
 
-if (instance_exists(obj_player) and start_moving == 1) {
+if (instance_exists(obj_player) and start_moving == 1 and obj_player.dead != 1) {
 	move_towards_point(obj_player.x, obj_player.y, spd);
-} else if (start_moving == 0) {
+} else if (start_moving == 0) or (obj_player.dead == 1) {
 	move_towards_point(obj_player.x, obj_player.y, 0)
 }
 
